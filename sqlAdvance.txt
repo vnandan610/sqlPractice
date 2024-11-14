@@ -1,0 +1,1217 @@
+Question 1:
+Which of the following SQL functions is used to calculate the remainder of a division operation between two numbers?
+A) ROUND
+B) MOD
+C) TRUNC
+D) DIV
+________________________________________
+Question 2:
+Given the SQL expression: SELECT NVL2(commission_pct, salary + (salary * commission_pct), salary) FROM employees;
+What will this query return?
+A) The salary increased by commission_pct if commission_pct is NULL; otherwise, just the salary.
+B) The salary increased by commission_pct if commission_pct is NOT NULL; otherwise, just the salary.
+C) The salary only if commission_pct is NULL.
+D) The salary only if commission_pct is NOT NULL.
+________________________________________
+Question 3:
+Which of the following statements about SQL single row functions is NOT true?
+A) They return one result per row.
+B) They can accept one or more arguments.
+C) They always return a character value.
+D) They can be nested.
+________________________________________
+Question 4:
+Consider the following SQL query:
+SELECT INSTR('Management', 'an') FROM dual;
+What will be the output?
+A) 1
+B) 2
+C) 3
+D) 0
+________________________________________
+Question 5:
+Which SQL function is used to replace occurrences of a specified string with another string?
+A) REPLACE
+B) SUBSTR
+C) TRIM
+D) TRANSLATE
+________________________________________
+Question 6:
+Assertion (A): The COALESCE function returns the first non-null expression in a list.
+Reason (R): The NVL function can take more than two arguments.
+A) Both A and R are true, and R is the correct explanation of A.
+B) Both A and R are true, but R is NOT the correct explanation of A.
+C) A is true, but R is false.
+D) A is false, but R is true.
+________________________________________
+Question 7:
+Which of the following is not a type of SQL JOIN?
+A) INNER JOIN
+B) CROSS JOIN
+C) FULL OUTER JOIN
+D) UPPER JOIN
+________________________________________
+Question 8:
+Given the SQL statement:
+SELECT ROUND(1234.567, -2) FROM dual;
+What is the output?
+A) 1234.57
+B) 1200
+C) 1235
+D) 1000
+________________________________________
+Question 9:
+Which function can be used to remove specified leading, trailing, or both characters from a string?
+A) TRIM
+B) SUBSTR
+C) LPAD
+D) RTRIM
+________________________________________
+Question 10:
+Consider the following tables:
+Employees table:
+emp_id	name	dept_id
+1	Alice	10
+2	Bob	20
+3	Charlie	NULL
+Departments table:
+dept_id	dept_name
+10	HR
+20	IT
+30	Finance
+What will be the result of the following SQL query?
+SELECT e.name, d.dept_name FROM employees e LEFT JOIN departments d ON e.dept_id = d.dept_id;
+A) All employees and their department names; employees without a department will have NULL in dept_name.
+B) All departments and their employees; departments without employees will have NULL in name.
+C) Only employees who have a department assigned.
+D) Only departments that have employees assigned.
+________________________________________
+Question 11:
+Which of the following SQL functions can be used to test whether a string matches a regular expression pattern?
+A) REGEXP_LIKE
+B) LIKE
+C) REGEXP_REPLACE
+D) INSTR
+________________________________________
+Question 12:
+Given the SQL query:
+SELECT TO_CHAR(TO_DATE('15-SEP-21', 'DD-MON-RR'), 'YYYY/MM/DD') FROM dual;
+What is the output?
+A) 2021/09/15
+B) 15/SEP/2021
+C) 21/09/15
+D) Error due to date format mismatch
+________________________________________
+Question 13:
+Which of the following statements about GROUP BY clause is true?
+A) It can be used even if there are no aggregate functions in the SELECT clause.
+B) It must include all columns listed in the SELECT clause.
+C) It cannot be used with HAVING clause.
+D) It groups rows that have the same values in specified columns into summary rows.
+________________________________________
+Question 14:
+What is the purpose of the NULLIF function in SQL?
+A) To return NULL if two expressions are equal; otherwise, returns the first expression.
+B) To replace NULL values with a specified value.
+C) To return the first non-NULL expression in a list.
+D) To check if an expression is NULL.
+________________________________________
+Question 15:
+Which SQL function would you use to calculate the number of months between two dates?
+A) MONTHS_BETWEEN
+B) ADD_MONTHS
+C) NEXT_DAY
+D) LAST_DAY
+________________________________________
+Question 16:
+Consider the following SQL statement:
+SELECT name, salary FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
+What does this query return?
+A) Names and salaries of employees whose salary is above average.
+B) Names and salaries of employees whose salary is below average.
+C) The average salary of all employees.
+D) Names and salaries of all employees.
+________________________________________
+Question 17:
+Which of the following is NOT a valid type of SQL function?
+A) Single-row functions
+B) Aggregate functions
+C) Table functions
+D) Column functions
+________________________________________
+Question 18:
+Given the SQL statement:
+SELECT LOWER(SUBSTR('ORACLE SQL', INSTR('ORACLE SQL', ' ') + 1)) FROM dual;
+What is the output?
+A) sql
+B) SQL
+C) oracle
+D) ORACLE
+________________________________________
+Question 19:
+Assertion (A): The HAVING clause is used to filter groups based on a condition.
+Reason (R): The WHERE clause can be used to filter aggregated data.
+A) Both A and R are true, and R is the correct explanation of A.
+B) Both A and R are true, but R is NOT the correct explanation of A.
+C) A is true, but R is false.
+D) A is false, but R is true.
+________________________________________
+Question 20:
+Which of the following statements correctly describes the function of the DECODE function in SQL?
+A) It decodes encrypted data.
+B) It provides IF-THEN-ELSE functionality within SQL queries.
+C) It encodes data into a different format.
+D) It performs pattern matching using regular expressions.
+________________________________________
+Question 21:
+Given the SQL query:
+SELECT COALESCE(NULL, NULL, 'First Non-Null', NULL) FROM dual;
+What is the output?
+A) NULL
+B) First Non-Null
+C) NULL,NULL,First Non-Null,NULL
+D) Error due to multiple NULLs
+________________________________________
+Question 22:
+Which of the following functions can be used to pad a string with a specified set of characters on the left side to a certain length?
+A) LPAD
+B) RPAD
+C) LTRIM
+D) RTRIM
+________________________________________
+Question 23:
+In a self join:
+A) A table is joined with another table that has the same structure.
+B) A table is joined with itself.
+C) A table is joined with all tables in the database.
+D) It is not possible to perform a self join in SQL.
+________________________________________
+Question 24:
+Which SQL function can be used to substitute NULL values with a specified replacement value?
+A) NVL
+B) NVL2
+C) NULLIF
+D) COALESCE
+________________________________________
+Question 25:
+Given the table Sales:
+id	product	quantity	price
+1	A	10	2.5
+2	B	5	5.0
+3	A	7	2.5
+4	B	3	5.0
+What is the result of the following SQL query?
+SELECT product, SUM(quantity) FROM Sales GROUP BY product HAVING SUM(quantity) > 10;
+A) product A with total quantity 17
+B) product B with total quantity 8
+C) Both products A and B
+D) No rows will be returned
+________________________________________
+Question 26:
+Which of the following functions can be used to remove both leading and trailing spaces from a string?
+A) TRIM
+B) LTRIM
+C) RTRIM
+D) SUBSTR
+________________________________________
+Question 27:
+Given the SQL statement:
+SELECT NEXT_DAY(TO_DATE('13-FEB-2021', 'DD-MON-YYYY'), 'MONDAY') FROM dual;
+What is the output date?
+A) 15-FEB-2021
+B) 14-FEB-2021
+C) 22-FEB-2021
+D) 20-FEB-2021
+________________________________________
+Question 28:
+Which of the following is true regarding the REGEXP_REPLACE function?
+A) It replaces all occurrences of a pattern in a string with a replacement string.
+B) It replaces the first occurrence of a pattern in a string with a replacement string.
+C) It removes the pattern from the string without replacing it.
+D) It validates whether the string matches a regular expression pattern.
+________________________________________
+Question 29:
+What will be the output of the following SQL statement?
+SELECT TRUNC(1234.567, -2) FROM dual;
+A) 1234.56
+B) 1200
+C) 1234
+D) 1000
+________________________________________
+Question 30:
+Which SQL clause is used to filter records after the GROUP BY clause has been applied?
+A) WHERE
+B) HAVING
+C) ORDER BY
+D) GROUP BY
+________________________________________
+Answers:
+1.	B) MOD
+2.	B) The salary increased by commission_pct if commission_pct is NOT NULL; otherwise, just the salary.
+3.	C) They always return a character value.
+4.	C) 3
+5.	A) REPLACE
+6.	C) A is true, but R is false.
+7.	D) UPPER JOIN
+8.	B) 1200
+9.	A) TRIM
+10.	A) All employees and their department names; employees without a department will have NULL in dept_name.
+11.	A) REGEXP_LIKE
+12.	A) 2021/09/15
+13.	D) It groups rows that have the same values in specified columns into summary rows.
+14.	A) To return NULL if two expressions are equal; otherwise, returns the first expression.
+15.	A) MONTHS_BETWEEN
+16.	A) Names and salaries of employees whose salary is above average.
+17.	D) Column functions
+18.	A) sql
+19.	C) A is true, but R is false.
+20.	B) It provides IF-THEN-ELSE functionality within SQL queries.
+21.	B) First Non-Null
+22.	A) LPAD
+23.	B) A table is joined with itself.
+24.	A) NVL
+25.	A) product A with total quantity 17
+26.	A) TRIM
+27.	A) 15-FEB-2021
+28.	A) It replaces all occurrences of a pattern in a string with a replacement string.
+29.	D) 1000
+30.	B) HAVING
+o1
+You said:
+Make more such 30 questions. Do not repeat any questions. Every questions should be unique. Include more query related standard tricky questions
+ChatGPT
+Thought for 38 seconds
+Question 31:
+Which SQL function returns the length of a string, excluding any trailing spaces?
+A) LENGTH
+B) TRIM(LENGTH)
+C) LTRIM
+D) LENGTH(TRIM(string))
+________________________________________
+Question 32:
+Given the SQL query:
+sql
+Copy code
+SELECT salary, DECODE(SIGN(salary - 5000), -1, 'Below 5000', 0, 'Exactly 5000', 1, 'Above 5000') AS salary_status
+FROM employees;
+What will be the output of the salary_status column for an employee with a salary of 5000?
+A) 'Below 5000'
+B) 'Exactly 5000'
+C) 'Above 5000'
+D) NULL
+________________________________________
+Question 33:
+Which of the following is true about the TO_DATE function in SQL?
+A) It converts a date to a character string in a specified format.
+B) It converts a character string to a date in a specified format.
+C) It formats a number to a date format.
+D) It extracts the date part from a timestamp.
+________________________________________
+Question 34:
+Consider the following SQL query:
+sql
+Copy code
+SELECT LPAD('SQL', 5, '*') FROM dual;
+What is the output?
+A) 'SQL**'
+B) '**SQL'
+C) 'SQL'
+D) '***SQL'
+________________________________________
+Question 35:
+Which of the following statements about the CASE statement in SQL is FALSE?
+A) It can be used to perform conditional logic in SQL queries.
+B) It cannot be used in the ORDER BY clause.
+C) It can be used to replace the DECODE function.
+D) It can handle multiple conditions in a single query.
+________________________________________
+Question 36:
+Given the following tables:
+Employees:
+emp_id	name	dept_id
+1	Alice	10
+2	Bob	20
+3	Carol	30
+Departments:
+dept_id	dept_name
+10	HR
+20	IT
+Which of the following SQL queries will return employees who do not have a matching department in the Departments table?
+A) SELECT * FROM employees INNER JOIN departments ON employees.dept_id = departments.dept_id;
+B) SELECT * FROM employees LEFT JOIN departments ON employees.dept_id = departments.dept_id WHERE departments.dept_id IS NULL;
+C) SELECT * FROM employees RIGHT JOIN departments ON employees.dept_id = departments.dept_id WHERE employees.dept_id IS NULL;
+D) SELECT * FROM employees FULL OUTER JOIN departments ON employees.dept_id = departments.dept_id;
+________________________________________
+Question 37:
+What is the purpose of the ADD_MONTHS function in SQL?
+A) It adds a specified number of days to a date.
+B) It adds a specified number of months to a date.
+C) It calculates the difference in months between two dates.
+D) It returns the last day of the month for a given date.
+________________________________________
+Question 38:
+Given the SQL query:
+sql
+Copy code
+SELECT REGEXP_REPLACE('abc123xyz', '[0-9]', '#') FROM dual;
+What is the output?
+A) 'abc###xyz'
+B) 'abc123xyz'
+C) 'abc#2#xyz'
+D) 'abcxyz'
+________________________________________
+Question 39:
+Which of the following functions can be used to extract a substring from a string starting from a specific position?
+A) SUBSTR
+B) INSTR
+C) REPLACE
+D) LENGTH
+________________________________________
+Question 40:
+Consider the SQL query:
+sql
+Copy code
+SELECT MOD(14, 3) FROM dual;
+What is the output?
+A) 2
+B) 3
+C) 4
+D) 1
+________________________________________
+Question 41:
+Which of the following is NOT an aggregate function in SQL?
+A) COUNT
+B) SUM
+C) MIN
+D) CONCAT
+________________________________________
+Question 42:
+Which SQL function can be used to return the position of a substring within a string?
+A) SUBSTR
+B) POSITION
+C) INSTR
+D) FIND
+________________________________________
+Question 43:
+Given the SQL query:
+sql
+Copy code
+SELECT TO_CHAR(TO_DATE('2021-12-31', 'YYYY-MM-DD'), 'Month DD, YYYY') FROM dual;
+What is the output?
+A) 'December 31, 2021'
+B) 'Dec 31, 2021'
+C) '12 31, 2021'
+D) '31 December, 2021'
+________________________________________
+Question 44:
+In SQL, which function can be used to replace NULL values in a result set with a specified value?
+A) NVL
+B) ISNULL
+C) NULLIF
+D) IFNULL
+________________________________________
+Question 45:
+Which of the following SQL clauses is used to specify a condition while joining tables?
+A) WHERE
+B) ON
+C) USING
+D) ALL OF THE ABOVE
+________________________________________
+Question 46:
+Consider the SQL query:
+sql
+Copy code
+SELECT * FROM employees e JOIN departments d USING (dept_id);
+Which type of join is being used?
+A) Natural Join
+B) Cross Join
+C) Inner Join
+D) Outer Join
+________________________________________
+Question 47:
+Given the SQL query:
+sql
+Copy code
+SELECT TRUNC(1234.567, 1) FROM dual;
+What is the output?
+A) 1234.5
+B) 1234.6
+C) 1234.0
+D) 1230.0
+________________________________________
+Question 48:
+Which of the following functions will return the last day of the month for a given date?
+A) LAST_DAY
+B) END_OF_MONTH
+C) MONTH_END
+D) DATEADD
+________________________________________
+Question 49:
+Which SQL function can be used to return the next date after a given date that falls on a specified day of the week?
+A) NEXT_DAY
+B) ADD_DAYS
+C) DAY_OF_WEEK
+D) DATEPART
+________________________________________
+Question 50:
+What does the following SQL query do?
+sql
+Copy code
+SELECT name, COUNT(*) FROM employees GROUP BY name HAVING COUNT(*) > 1;
+A) Selects the names of employees who appear more than once in the employees table.
+B) Selects the total number of employees for each name.
+C) Returns an error because of invalid use of HAVING clause.
+D) Selects names of employees who have a COUNT(*) greater than 1.
+________________________________________
+Question 51:
+Which of the following statements is true about the COALESCE function in SQL?
+A) It returns the first non-null value from a list of expressions.
+B) It returns NULL if all arguments are non-null.
+C) It can only take two arguments.
+D) It is used to compare two expressions and return NULL if they are equal.
+________________________________________
+Question 52:
+Consider the SQL query:
+sql
+Copy code
+SELECT CASE WHEN salary >= 5000 THEN 'High' ELSE 'Low' END AS salary_level FROM employees;
+What will be the output for an employee with a salary of NULL?
+A) 'High'
+B) 'Low'
+C) NULL
+D) 'Medium'
+________________________________________
+Question 53:
+Which of the following SQL functions can be used to perform a regular expression pattern match?
+A) REGEXP_LIKE
+B) LIKE
+C) SIMILAR TO
+D) All of the above
+________________________________________
+Question 54:
+Given the SQL statement:
+sql
+Copy code
+SELECT * FROM employees e FULL OUTER JOIN departments d ON e.dept_id = d.dept_id;
+What does this query return?
+A) Only the matching rows from both tables.
+B) All rows from both tables, matching where possible.
+C) All rows from the left table only.
+D) All rows from the right table only.
+________________________________________
+Question 55:
+Which function in SQL is used to calculate the standard deviation of a numeric column?
+A) STDDEV
+B) VARIANCE
+C) AVG
+D) SUM
+________________________________________
+Question 56:
+What is the difference between NVL and NVL2 functions?
+A) NVL replaces NULL with a specified value, NVL2 returns different values based on whether a value is NULL or not.
+B) NVL replaces NULL with a specified value, NVL2 replaces non-NULL values with a specified value.
+C) NVL returns the first non-NULL value, NVL2 returns NULL if both arguments are NULL.
+D) There is no difference; they perform the same function.
+________________________________________
+Question 57:
+Given the SQL query:
+sql
+Copy code
+SELECT LOWER(UPPER('Sql FunctionS')) FROM dual;
+What is the output?
+A) 'Sql FunctionS'
+B) 'sql functions'
+C) 'SQL FUNCTIONS'
+D) 'Sql Functions'
+________________________________________
+Question 58:
+Consider the SQL statement:
+sql
+Copy code
+SELECT ADD_MONTHS(TO_DATE('31-JAN-2021', 'DD-MON-YYYY'), 1) FROM dual;
+What is the output date?
+A) 28-FEB-2021
+B) 01-MAR-2021
+C) 02-MAR-2021
+D) 03-MAR-2021
+________________________________________
+Question 59:
+Which of the following is true about the GROUP BY clause?
+A) It can group data based on one or more columns.
+B) It can be used without any aggregate functions.
+C) It must be followed by a HAVING clause.
+D) It is used to sort data in ascending or descending order.
+________________________________________
+Question 60:
+Which SQL function can be used to pad a string with specified characters to a certain length on the right side?
+A) RPAD
+B) LPAD
+C) RTRIM
+D) LTRIM
+________________________________________
+Answers:
+31.	D) LENGTH(TRIM(string))
+32.	B) 'Exactly 5000'
+33.	B) It converts a character string to a date in a specified format.
+34.	**B) 'SQL'
+35.	B) It cannot be used in the ORDER BY clause.
+36.	B) SELECT * FROM employees LEFT JOIN departments ON employees.dept_id = departments.dept_id WHERE departments.dept_id IS NULL;
+37.	B) It adds a specified number of months to a date.
+38.	A) 'abc###xyz'
+39.	A) SUBSTR
+40.	A) 2
+41.	D) CONCAT
+42.	C) INSTR
+43.	A) 'December 31, 2021'
+44.	A) NVL
+45.	D) ALL OF THE ABOVE
+46.	C) Inner Join
+47.	A) 1234.5
+48.	A) LAST_DAY
+49.	A) NEXT_DAY
+50.	A) Selects the names of employees who appear more than once in the employees table.
+51.	A) It returns the first non-null value from a list of expressions.
+52.	B) 'Low'
+53.	D) All of the above
+54.	B) All rows from both tables, matching where possible.
+55.	A) STDDEV
+56.	A) NVL replaces NULL with a specified value, NVL2 returns different values based on whether a value is NULL or not.
+57.	B) 'sql functions'
+58.	A) 28-FEB-2021
+59.	A) It can group data based on one or more columns.
+60.	A) RPAD
+o1
+You said:
+Make more 30 questions. Questions should be made in the way that while only knowing the answers for these question the attempted get the good in depth idea about these topics. 
+ChatGPT
+Thought for 8 seconds
+Question 61:
+Which of the following statements best describes a single-row function in SQL?
+A) A function that operates on a set of rows and returns a single aggregated value.
+B) A function that returns multiple values for each row processed.
+C) A function that operates on each row individually and returns one result per row.
+D) A function that can only be used in the GROUP BY clause.
+________________________________________
+Question 62:
+Given the SQL statement:
+sql
+Copy code
+SELECT REPLACE('Hello World', 'World', 'SQL') FROM dual;
+What is the output?
+A) 'Hello SQL'
+B) 'Hello World'
+C) 'SQL World'
+D) 'Hello'
+________________________________________
+Question 63:
+Which SQL function would you use to convert the string '1234.56' into a number?
+A) TO_NUMBER('1234.56')
+B) TO_CHAR('1234.56')
+C) CAST('1234.56' AS NUMBER)
+D) Both A and C
+________________________________________
+Question 64:
+What will be the result of the following SQL query?
+sql
+Copy code
+SELECT NVL(NULL, 'Default Value') FROM dual;
+A) NULL
+B) 'Default Value'
+C) An error due to NULL value
+D) ''
+________________________________________
+Question 65:
+Which of the following functions can be used to return the numeric position of a character or substring within a string?
+A) SUBSTR
+B) INSTR
+C) LENGTH
+D) CHR
+________________________________________
+Question 66:
+Given the SQL query:
+sql
+Copy code
+SELECT UPPER(SUBSTR('database', 3, 2)) FROM dual;
+What is the output?
+A) 'DA'
+B) 'AB'
+C) 'AB' (in uppercase)
+D) 'TA'
+________________________________________
+Question 67:
+Which of the following statements about the TRUNC function when applied to numbers is true?
+A) It rounds a number up to the nearest whole number.
+B) It truncates a number to a specified number of decimal places without rounding.
+C) It removes all decimal places, effectively rounding the number.
+D) It returns the integer part of a number.
+________________________________________
+Question 68:
+What is the difference between the INNER JOIN and the LEFT OUTER JOIN?
+A) INNER JOIN returns all rows from both tables; LEFT OUTER JOIN returns matching rows only.
+B) INNER JOIN returns matching rows only; LEFT OUTER JOIN returns all rows from the left table and matching rows from the right table.
+C) INNER JOIN returns all rows from the left table; LEFT OUTER JOIN returns all rows from the right table.
+D) There is no difference between INNER JOIN and LEFT OUTER JOIN.
+________________________________________
+Question 69:
+Consider the following SQL statement:
+sql
+Copy code
+SELECT employee_id, salary
+FROM employees
+WHERE MOD(salary, 2) = 0;
+What does this query return?
+A) Employees with odd salaries.
+B) Employees with even salaries.
+C) Employees whose salary is divisible by 2 with no remainder.
+D) Both B and C.
+________________________________________
+Question 70:
+Which of the following functions can be used to find the variance of a numeric column in SQL?
+A) VARIANCE
+B) STDDEV
+C) AVG
+D) SUM
+________________________________________
+Question 71:
+Given the SQL statement:
+sql
+Copy code
+SELECT COALESCE(NULL, NULL, 'First', 'Second') FROM dual;
+What is the output?
+A) NULL
+B) 'First'
+C) 'Second'
+D) 'First, Second'
+________________________________________
+Question 72:
+Which function would you use to return the current date and time in SQL?
+A) SYSDATE
+B) GETDATE()
+C) CURRENT_DATE
+D) All of the above, depending on the SQL dialect
+________________________________________
+Question 73:
+What will be the output of the following SQL query?
+sql
+Copy code
+SELECT LENGTH('   SQL   ') FROM dual;
+A) 7
+B) 3
+C) 9
+D) 6
+________________________________________
+Question 74:
+Which SQL function can be used to extract the month from a date?
+A) EXTRACT(MONTH FROM date)
+B) MONTH(date)
+C) TO_CHAR(date, 'MM')
+D) All of the above
+________________________________________
+Question 75:
+Consider the SQL query:
+sql
+Copy code
+SELECT name, SUM(sales)
+FROM sales_data
+GROUP BY name
+HAVING SUM(sales) > 1000;
+What does this query do?
+A) Selects the names and total sales for sales over $1000.
+B) Selects all sales records where individual sales are over $1000.
+C) Filters groups where the total sales per name exceed $1000.
+D) Calculates the average sales for each name.
+________________________________________
+Question 76:
+Which of the following best describes a self-join?
+A) A join of two tables with identical structures.
+B) A join where a table is joined to itself.
+C) A join between tables in different databases.
+D) A join that combines all rows from two tables.
+________________________________________
+Question 77:
+Given the SQL statement:
+sql
+Copy code
+SELECT TRIM(' SQL ') FROM dual;
+What is the output?
+A) 'SQL'
+B) ' SQL'
+C) 'SQL '
+D) ' SQL '
+________________________________________
+Question 78:
+Which of the following functions can be used to perform a case-insensitive search using regular expressions?
+A) REGEXP_LIKE with 'i' parameter
+B) LIKE with '%'
+C) INSTR with UPPER function
+D) None of the above
+________________________________________
+Question 79:
+What will be the result of the following SQL query?
+sql
+Copy code
+SELECT TO_CHAR(TO_DATE('2021-07-15', 'YYYY-MM-DD'), 'Month DD, YYYY') FROM dual;
+A) 'July 15, 2021'
+B) '07 15, 2021'
+C) 'Jul 15, 2021'
+D) '2021-07-15'
+________________________________________
+Question 80:
+Which function would you use to get the date of the next Friday after a given date?
+A) NEXT_DAY(date, 'FRIDAY')
+B) ADD_DAYS(date, 'FRIDAY')
+C) LAST_DAY(date, 'FRIDAY')
+D) TO_DATE('FRIDAY', date)
+________________________________________
+Question 81:
+Given the SQL query:
+sql
+Copy code
+SELECT CASE WHEN salary > 5000 THEN 'High' WHEN salary BETWEEN 3000 AND 5000 THEN 'Medium' ELSE 'Low' END AS salary_range FROM employees;
+What will be the salary_range for an employee with a salary of 4000?
+A) 'High'
+B) 'Medium'
+C) 'Low'
+D) NULL
+________________________________________
+Question 82:
+Which SQL function can be used to combine two strings into one?
+A) CONCAT
+B) MERGE
+C) UNION
+D) JOIN
+________________________________________
+Question 83:
+Consider the following SQL query:
+sql
+Copy code
+SELECT DECODE(dept_id, 10, 'HR', 20, 'IT', 'Other') FROM employees;
+What does this query do?
+A) Decodes the dept_id to return department names; if dept_id is not 10 or 20, returns 'Other'.
+B) Encrypts the dept_id for security purposes.
+C) Replaces NULL dept_id values with 'Other'.
+D) Throws an error if dept_id is NULL.
+________________________________________
+Question 84:
+Which of the following statements about the GROUP BY clause is true?
+A) It can be used to group rows that have the same values in specified columns.
+B) It must be used with aggregate functions.
+C) It filters records before aggregation.
+D) It cannot be used with the HAVING clause.
+________________________________________
+Question 85:
+Given the SQL statement:
+sql
+Copy code
+SELECT ROUND(123.456, 1) FROM dual;
+What is the output?
+A) 123.5
+B) 123.4
+C) 123.45
+D) 123.0
+________________________________________
+Question 86:
+Which function can be used to return the last day of the month for a given date?
+A) LAST_DAY(date)
+B) END_OF_MONTH(date)
+C) MONTH_END(date)
+D) FINAL_DAY(date)
+________________________________________
+Question 87:
+What is the purpose of the NULLIF function in SQL?
+A) To return NULL if two expressions are equal.
+B) To return the first non-NULL value in a list.
+C) To replace NULL values with a specified value.
+D) To check if an expression is NULL.
+________________________________________
+Question 88:
+Which SQL function can be used to format a number to a specific pattern, including currency symbols?
+A) TO_CHAR(number, 'format_model')
+B) TO_NUMBER(number, 'format_model')
+C) FORMAT(number, 'format_model')
+D) NUMBER_FORMAT(number, 'format_model')
+________________________________________
+Question 89:
+Given the SQL query:
+sql
+Copy code
+SELECT LPAD('SQL', 5, '*') FROM dual;
+What is the output?
+A) '**SQL'
+B) 'SQL**'
+C) 'SQL'
+D) '***SQL'
+________________________________________
+Question 90:
+Which of the following best describes the purpose of the STDDEV function?
+A) It calculates the average of a set of values.
+B) It calculates the variance of a set of values.
+C) It calculates the standard deviation of a set of values.
+D) It calculates the sum of a set of values.
+________________________________________
+Question 91:
+In SQL, what is the difference between the WHERE and HAVING clauses?
+A) WHERE filters rows before aggregation; HAVING filters groups after aggregation.
+B) WHERE filters groups after aggregation; HAVING filters rows before aggregation.
+C) There is no difference; they are interchangeable.
+D) WHERE can only be used with GROUP BY; HAVING cannot.
+________________________________________
+Question 92:
+Given the SQL statement:
+sql
+Copy code
+SELECT employee_id, dept_id
+FROM employees
+WHERE dept_id IN (SELECT dept_id FROM departments WHERE location = 'New York');
+What does this query do?
+A) Selects employees who work in departments located in New York.
+B) Selects departments located in New York.
+C) Selects employees not located in New York.
+D) Returns an error due to subquery.
+________________________________________
+Question 93:
+Which function can be used to remove characters from the left side of a string?
+A) LTRIM
+B) RTRIM
+C) TRIM
+D) SUBSTR
+________________________________________
+Question 94:
+What will be the output of the following SQL query?
+sql
+Copy code
+SELECT REGEXP_LIKE('Hello123', '^[A-Za-z]+$') FROM dual;
+A) TRUE
+B) FALSE
+C) 'Hello123'
+D) An error occurs
+________________________________________
+Question 95:
+Which SQL function can be used to extract a substring from a string, starting from a specified position and with a specified length?
+A) SUBSTR(string, position, length)
+B) INSTR(string, substring)
+C) LENGTH(string)
+D) EXTRACT(string, position, length)
+________________________________________
+Question 96:
+Given the SQL query:
+sql
+Copy code
+SELECT employee_id, FIRST_VALUE(salary) OVER (ORDER BY salary DESC) AS highest_salary FROM employees;
+What does this query do?
+A) Retrieves the highest salary among all employees for each row.
+B) Retrieves the first salary value in the employees table.
+C) Retrieves the salary of each employee.
+D) Returns an error due to misuse of window functions.
+________________________________________
+Question 97:
+Which SQL function would you use to calculate the number of months between two dates?
+A) MONTHS_BETWEEN(date1, date2)
+B) DATEDIFF('month', date1, date2)
+C) MONTH_DIFF(date1, date2)
+D) DATE_DIFF(date1, date2, 'months')
+________________________________________
+Question 98:
+What is the purpose of the TO_DATE function in SQL?
+A) To convert a string to a date data type.
+B) To format a date as a string.
+C) To extract the date part from a timestamp.
+D) To add days to a date.
+________________________________________
+Question 99:
+Which of the following statements about the REPLACE function is true?
+A) It replaces occurrences of a specified substring within a string with another substring.
+B) It removes all spaces from a string.
+C) It truncates a string to a specified length.
+D) It reverses the characters in a string.
+________________________________________
+Question 100:
+Given the SQL query:
+sql
+Copy code
+SELECT MOD(15, 4) FROM dual;
+What is the output?
+A) 3
+B) 4
+C) 15
+D) 2
+________________________________________
+Answers:
+61.	C) A function that operates on each row individually and returns one result per row.
+62.	A) 'Hello SQL'
+63.	D) Both A and C
+64.	B) 'Default Value'
+65.	B) INSTR
+66.	C) 'AB' (in uppercase)
+67.	B) It truncates a number to a specified number of decimal places without rounding.
+68.	D) There is no difference between INNER JOIN and LEFT OUTER JOIN.
+(Correct answer should be B, but since D is not correct, we need to correct the options.)
+68.	B) INNER JOIN returns matching rows only; LEFT OUTER JOIN returns all rows from the left table and matching rows from the right table.
+69.	D) Both B and C.
+70.	A) VARIANCE
+71.	B) 'First'
+72.	D) All of the above, depending on the SQL dialect
+73.	C) 9
+74.	D) All of the above
+75.	C) Filters groups where the total sales per name exceed $1000.
+76.	B) A join where a table is joined to itself.
+77.	A) 'SQL'
+78.	A) REGEXP_LIKE with 'i' parameter
+79.	A) 'July 15, 2021'
+80.	A) NEXT_DAY(date, 'FRIDAY')
+81.	B) 'Medium'
+82.	A) CONCAT
+83.	A) Decodes the dept_id to return department names; if dept_id is not 10 or 20, returns 'Other'.
+84.	A) It can be used to group rows that have the same values in specified columns.
+85.	A) 123.5
+86.	A) LAST_DAY(date)
+87.	A) To return NULL if two expressions are equal.
+88.	A) TO_CHAR(number, 'format_model')
+89.	**A) 'SQL'
+90.	C) It calculates the standard deviation of a set of values.
+91.	A) WHERE filters rows before aggregation; HAVING filters groups after aggregation.
+92.	A) Selects employees who work in departments located in New York.
+93.	A) LTRIM
+94.	B) FALSE
+95.	A) SUBSTR(string, position, length)
+96.	A) Retrieves the highest salary among all employees for each row.
+97.	A) MONTHS_BETWEEN(date1, date2)
+98.	A) To convert a string to a date data type.
+99.	A) It replaces occurrences of a specified substring within a string with another substring.
+100.	A) 3
+
+
+
+Question 101:
+Which of the following statements about the NVL function in SQL is true?
+A) NVL can replace NULL values with a specified value of any data type.
+B) NVL can only replace NULL values with numeric data types.
+C) NVL returns NULL if both arguments are NULL.
+D) NVL is used to compare two expressions and returns TRUE if both are NULL.
+________________________________________
+Question 102:
+Consider the SQL query:
+sql
+Copy code
+SELECT employee_id, salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS salary_rank
+FROM employees;
+What does the DENSE_RANK() function do in this query?
+A) Assigns a unique rank to each salary, skipping ranks when there are ties.
+B) Assigns the same rank to identical salaries without skipping subsequent ranks.
+C) Assigns a continuous rank sequence, even if there are ties in salaries.
+D) Returns an error because DENSE_RANK() is not a valid function.
+________________________________________
+Question 103:
+Which SQL function would you use to find the ASCII value of a character?
+A) ASCII(character)
+B) CHR(character)
+C) TO_NUMBER(character)
+D) ORD(character)
+________________________________________
+Question 104:
+Given the SQL query:
+sql
+Copy code
+SELECT REGEXP_REPLACE('Contact: 123-456-7890', '[0-9]', 'X') FROM dual;
+What is the output?
+A) 'Contact: XXX-XXX-XXXX'
+B) 'Contact: 123-456-7890'
+C) 'Contact: '
+D) 'Contact: XXXXXXXXXXX'
+________________________________________
+Question 105:
+Which of the following statements about the CASE expression is FALSE?
+A) CASE can be used for conditional logic in SQL queries.
+B) CASE expressions can be nested within each other.
+C) CASE can only evaluate numeric expressions.
+D) CASE can be used in SELECT, WHERE, ORDER BY, and GROUP BY clauses.
+________________________________________
+Question 106:
+Which of the following SQL functions can be used to convert a date to a character string in a specific format?
+A) TO_CHAR(date, 'format_model')
+B) TO_DATE(date, 'format_model')
+C) TO_NUMBER(date, 'format_model')
+D) CONVERT(date, 'format_model')
+________________________________________
+Question 107:
+Consider the following tables:
+Products:
+product_id	product_name
+1	Widget
+2	Gadget
+3	Thingamajig
+Sales:
+sale_id	product_id	quantity
+100	1	5
+101	2	3
+102	1	2
+103	4	7
+Which SQL query will return all products and their total quantities sold, including products that have not been sold?
+A)
+sql
+Copy code
+SELECT p.product_name, SUM(s.quantity)
+FROM products p
+LEFT JOIN sales s ON p.product_id = s.product_id
+GROUP BY p.product_name;
+B)
+sql
+Copy code
+SELECT p.product_name, SUM(s.quantity)
+FROM products p
+INNER JOIN sales s ON p.product_id = s.product_id
+GROUP BY p.product_name;
+C)
+sql
+Copy code
+SELECT p.product_name, SUM(s.quantity)
+FROM products p
+RIGHT JOIN sales s ON p.product_id = s.product_id
+GROUP BY p.product_name;
+D)
+sql
+Copy code
+SELECT p.product_name, SUM(s.quantity)
+FROM products p
+FULL OUTER JOIN sales s ON p.product_id = s.product_id
+GROUP BY p.product_name;
+________________________________________
+Question 108:
+What will be the result of the following SQL query?
+sql
+Copy code
+SELECT ROUND(ROUND(123.4567, 2), 1) FROM dual;
+A) 123.5
+B) 123.45
+C) 123.4
+D) 123.46
+________________________________________
+Question 109:
+Which of the following statements about the TRUNC function applied to dates is true?
+A) TRUNC(date) removes the time portion, setting it to midnight.
+B) TRUNC(date) advances the date to the next day.
+C) TRUNC(date) sets the date to the first day of the month.
+D) TRUNC(date) returns the last day of the month.
+________________________________________
+Question 110:
+Given the SQL query:
+sql
+Copy code
+SELECT employee_id, salary
+FROM employees
+WHERE salary > ALL (SELECT salary FROM employees WHERE department_id = 10);
+What does this query return?
+A) Employees whose salary is greater than any salary in department 10.
+B) Employees whose salary is less than all salaries in department 10.
+C) Employees whose salary is greater than the highest salary in department 10.
+D) Employees whose salary is greater than the average salary of department 10.
+________________________________________
+Question 111:
+Which SQL function would you use to return a string padded on the right with spaces to a specified length?
+A) RPAD(string, length)
+B) LPAD(string, length)
+C) RSPACE(string, length)
+D) LSPACE(string, length)
+________________________________________
+Question 112:
+Consider the SQL statement:
+sql
+Copy code
+SELECT salary, NULLIF(salary, commission) FROM employees;
+What does the NULLIF function do in this context?
+A) Returns NULL if salary and commission are equal; otherwise, returns salary.
+B) Returns salary if salary and commission are equal; otherwise, returns NULL.
+C) Returns NULL if commission is NULL; otherwise, returns salary.
+D) Returns commission if salary is NULL; otherwise, returns salary.
+________________________________________
+Question 113:
+Which of the following is NOT a valid type of SQL join?
+A) Natural Join
+B) Cross Join
+C) Equi Join
+D) Super Join
+________________________________________
+Question 114:
+Given the SQL query:
+sql
+Copy code
+SELECT TO_CHAR(1234.56, 'FM$9,999.00') FROM dual;
+What is the output?
+A) '$1,234.56'
+B) '$1234.56'
+C) '$ 1,234.56'
+D) '1,234.56'
+________________________________________
+Question 115:
+Which of the following SQL statements will correctly convert the string '15/08/2021' to a date in the format 'DD/MM/YYYY'?
+A) TO_DATE('15/08/2021', 'DD/MM/YYYY')
+B) TO_DATE('15/08/2021', 'MM/DD/YYYY')
+C) TO_CHAR('15/08/2021', 'DD/MM/YYYY')
+D) TO_DATE('08/15/2021', 'DD/MM/YYYY')
+________________________________________
+Question 116:
+What is the purpose of the REGEXP_INSTR function in SQL?
+A) To return the position of a substring within a string using regular expressions.
+B) To replace occurrences of a pattern in a string using regular expressions.
+C) To check if a string matches a regular expression pattern.
+D) To extract a substring that matches a regular expression pattern.
+________________________________________
+Question 117:
+Which SQL function can be used to convert a string to uppercase letters?
+A) UPPER(string)
+B) LOWER(string)
+C) INITCAP(string)
+D) CAPITALIZE(string)
+________________________________________
+Question 118:
+Assertion (A): The COALESCE function can take multiple arguments and returns the first non-null value.
+Reason (R): The NVL function can replace null values but only accepts two arguments.
+A) Both A and R are true, and R is the correct explanation of A.
+B) Both A and R are true, but R is NOT the correct explanation of A.
+C) A is true, but R is false.
+D) A is false, but R is true.
+________________________________________
+Question 119:
+Which of the following statements about aggregate functions is FALSE?
+A) Aggregate functions return a single value for a group of rows.
+B) Aggregate functions can be used with the GROUP BY clause.
+C) Aggregate functions can be nested within other aggregate functions.
+D) Aggregate functions ignore NULL values unless specified otherwise.
+________________________________________
+Question 120:
+Given the SQL query:
+sql
+Copy code
+SELECT department_id, COUNT(*)
+FROM employees
+GROUP BY department_id
+HAVING COUNT(*) > 5
+ORDER BY COUNT(*) DESC;
+What does this query accomplish?
+A) Selects departments with more than 5 employees, ordered by the number of employees in ascending order.
+B) Selects departments with more than 5 employees, ordered by the number of employees in descending order.
+C) Selects departments with exactly 5 employees.
+D) Returns an error because ORDER BY cannot be used with HAVING.
+________________________________________
+Answers:
+101.	A) NVL can replace NULL values with a specified value of any data type.
+102.	B) Assigns the same rank to identical salaries without skipping subsequent ranks.
+103.	A) ASCII(character)
+104.	A) 'Contact: XXX-XXX-XXXX'
+105.	C) CASE can only evaluate numeric expressions.
+106.	A) TO_CHAR(date, 'format_model')
+107.	A) SELECT p.product_name, SUM(s.quantity) FROM products p LEFT JOIN sales s ON p.product_id = s.product_id GROUP BY p.product_name;
+108.	A) 123.5
+109.	A) TRUNC(date) removes the time portion, setting it to midnight.
+110.	C) Employees whose salary is greater than the highest salary in department 10.
+111.	A) RPAD(string, length)
+112.	A) Returns NULL if salary and commission are equal; otherwise, returns salary.
+113.	D) Super Join
+114.	A) '$1,234.56'
+115.	A) TO_DATE('15/08/2021', 'DD/MM/YYYY')
+116.	A) To return the position of a substring within a string using regular expressions.
+117.	A) UPPER(string)
+118.	A) Both A and R are true, and R is the correct explanation of A.
+119.	C) Aggregate functions can be nested within other aggregate functions.
+120.	B) Selects departments with more than 5 employees, ordered by the number of employees in descending order.
+

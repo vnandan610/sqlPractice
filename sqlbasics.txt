@@ -1,0 +1,659 @@
+1. Which of the following SQL statements is used to create a new table in a database?
+A) INSERT INTO
+B) CREATE TABLE
+C) ALTER TABLE
+D) SELECT INTO
+________________________________________
+2. What does DML stand for in SQL?
+A) Data Manipulation Language
+B) Data Modification Language
+C) Data Management Language
+D) Data Modeling Language
+________________________________________
+3. Which of the following is not a Data Control Language (DCL) command?
+A) GRANT
+B) REVOKE
+C) COMMIT
+D) DENY
+________________________________________
+4. In SQL, which command is used to remove all records from a table, including all spaces allocated for the records?
+A) DELETE
+B) DROP
+C) TRUNCATE
+D) REMOVE
+________________________________________
+5. Which of the following SQL clauses is used to filter records based on a specified condition?
+A) SELECT
+B) WHERE
+C) FROM
+D) GROUP BY
+________________________________________
+6. Which comparison operator in SQL is used to compare a value to a specified list of values?
+A) BETWEEN
+B) LIKE
+C) IN
+D) EXISTS
+________________________________________
+7. Consider the following SQL statement:
+sql
+Copy code
+SELECT * FROM Employees WHERE Name LIKE '_a%';
+Which of the following best describes the result of this query?
+A) Selects employees whose names start with 'a'
+B) Selects employees whose names have 'a' as the second character
+C) Selects employees whose names end with 'a'
+D) Selects employees whose names contain 'a' anywhere
+________________________________________
+8. What is the main difference between clustered and non-clustered indexes?
+A) Clustered indexes are faster than non-clustered indexes
+B) Clustered indexes physically sort the data, non-clustered indexes do not
+C) Non-clustered indexes can only be created on numeric columns
+D) Clustered indexes can be created after non-clustered indexes
+________________________________________
+9. Which SQL statement is used to remove an existing index from a table?
+A) DROP INDEX
+B) DELETE INDEX
+C) ALTER TABLE DROP INDEX
+D) REMOVE INDEX
+________________________________________
+10. In SQL, which command is used to create a synonym for an existing object?
+A) CREATE ALIAS
+B) CREATE SYNONYM
+C) CREATE LINK
+D) CREATE REFERENCE
+________________________________________
+11. Which of the following is a logical operator in SQL?
+A) PLUS
+B) AND
+C) EQUALS
+D) GREATER THAN
+________________________________________
+12. The ORDER BY clause in SQL is used for:
+A) Filtering records based on a condition
+B) Grouping records with identical data
+C) Sorting the result set of a query
+D) Joining two tables
+________________________________________
+13. Which SQL function can be used to count the number of records in a table?
+A) SUM(*)
+B) COUNT(*)
+C) TOTAL(*)
+D) NUMBER(*)
+________________________________________
+14. In SQL, which keyword is used to sort the result-set in descending order?
+A) DESCEND
+B) ORDER BY DESC
+C) SORT DESCENDING
+D) ORDER DESC
+________________________________________
+15. What is the purpose of the COMMIT command in SQL?
+A) To save all changes made during the current transaction
+B) To cancel all changes made during the current transaction
+C) To grant privileges to users
+D) To create a new table in the database
+________________________________________
+16. Which statement is true about the TRUNCATE command?
+A) It removes all rows from a table but leaves the table structure
+B) It deletes a table completely including its structure
+C) It removes specific rows from a table based on a condition
+D) It can be rolled back after execution
+________________________________________
+17. Which of the following constraints ensures that the values in a column are unique across the database?
+A) PRIMARY KEY
+B) FOREIGN KEY
+C) UNIQUE
+D) CHECK
+________________________________________
+18. When creating an index, which type of index can be based on an expression or function applied to a column?
+A) Bitmap Index
+B) Function-based Index
+C) Composite Index
+D) Unique Index
+________________________________________
+19. What does TCL stand for in SQL?
+A) Transaction Control Language
+B) Table Control Language
+C) Trigger Control Language
+D) Transaction Command Language
+________________________________________
+20. Which SQL clause is used to specify a condition while fetching data from multiple tables using a SELECT statement?
+A) WHERE
+B) HAVING
+C) JOIN
+D) ON
+________________________________________
+21. Which command is used to grant a user permission to access a database object?
+A) ALLOW
+B) GRANT
+C) PERMIT
+D) AUTHORIZE
+________________________________________
+22. Which operator is used to test for the existence of any record in a subquery?
+A) EXISTS
+B) ANY
+C) ALL
+D) IN
+________________________________________
+23. Given the SQL statement:
+sql
+Copy code
+SELECT Name FROM Students WHERE Age BETWEEN 18 AND 22;
+This query will:
+A) Select students with Age equal to 18 or 22
+B) Select students with Age greater than 18 and less than 22
+C) Select students with Age between 18 and 22 inclusive
+D) Cause an error due to incorrect syntax
+________________________________________
+24. Which of the following statements correctly drops a synonym named "EmpSynonym"?
+A) DROP SYNONYM EmpSynonym;
+B) DELETE SYNONYM EmpSynonym;
+C) DROP ALIAS EmpSynonym;
+D) REMOVE SYNONYM EmpSynonym;
+________________________________________
+25. The purpose of the CHECK constraint is to:
+A) Limit the values that can be placed in a column
+B) Ensure a column cannot have NULL values
+C) Establish a relationship between tables
+D) Automatically populate a column with unique values
+________________________________________
+26. What is the result of the following SQL statement?
+sql
+Copy code
+SELECT * FROM Orders WHERE OrderDate IS NULL;
+A) Returns all orders where the OrderDate is not set
+B) Returns all orders where the OrderDate is set to zero
+C) Returns all orders sorted by OrderDate
+D) Causes an error because IS NULL is invalid syntax
+________________________________________
+27. Which command is used to modify the structure of an existing table?
+A) CHANGE TABLE
+B) UPDATE TABLE
+C) ALTER TABLE
+D) MODIFY TABLE
+________________________________________
+28. Which of the following is not a valid SQL operator?
+A) AND
+B) OR
+C) XOR
+D) NOT
+________________________________________
+29. Which clause is used in SQL to limit the groups of returned rows to those that satisfy a specified condition, typically used with GROUP BY?
+A) WHERE
+B) HAVING
+C) GROUP BY
+D) ORDER BY
+________________________________________
+30. The SQL statement to remove a table from the database is:
+A) DELETE TABLE table_name;
+B) DROP TABLE table_name;
+C) TRUNCATE TABLE table_name;
+D) REMOVE TABLE table_name;
+
+Answers
+1.	B) CREATE TABLE
+2.	A) Data Manipulation Language
+3.	C) COMMIT
+4.	C) TRUNCATE
+5.	B) WHERE
+6.	C) IN
+7.	B) Selects employees whose names have 'a' as the second character
+8.	B) Clustered indexes physically sort the data, non-clustered indexes do not
+9.	A) DROP INDEX
+10.	B) CREATE SYNONYM
+11.	B) AND
+12.	C) Sorting the result set of a query
+13.	B) COUNT(*)
+14.	B) ORDER BY DESC
+15.	A) To save all changes made during the current transaction
+16.	A) It removes all rows from a table but leaves the table structure
+17.	C) UNIQUE
+18.	B) Function-based Index
+19.	A) Transaction Control Language
+20.	D) ON
+21.	B) GRANT
+22.	A) EXISTS
+23.	C) Select students with Age between 18 and 22 inclusive
+24.	A) DROP SYNONYM EmpSynonym;
+25.	A) Limit the values that can be placed in a column
+26.	A) Returns all orders where the OrderDate is not set
+27.	C) ALTER TABLE
+28.	C) XOR
+29.	B) HAVING
+30.	B) DROP TABLE table_name;
+
+1. Which SQL statement is used to modify data in an existing table?
+A) ALTER TABLE
+B) UPDATE
+C) INSERT INTO
+D) MODIFY
+________________________________________
+2. Which of the following is a Data Definition Language (DDL) command?
+A) SELECT
+B) DELETE
+C) DROP
+D) COMMIT
+________________________________________
+3. What does the SQL wildcard '%' represent when used with the LIKE operator?
+A) Any single character
+B) Zero or more characters
+C) Exactly one character
+D) A range of characters
+________________________________________
+4. In SQL, which clause is used to specify the conditions that must be met for the records to be selected?
+A) FROM
+B) WHERE
+C) HAVING
+D) ORDER BY
+________________________________________
+5. Which command is used to revoke permissions from a user in SQL?
+A) DENY
+B) REVOKE
+C) REMOVE
+D) DELETE
+________________________________________
+6. What is the result of the following SQL query?
+sql
+Copy code
+SELECT COUNT(*) FROM Products WHERE Price > 100;
+A) Returns the total number of products
+B) Returns the number of products with Price greater than 100
+C) Returns the sum of prices greater than 100
+D) Returns all products with Price greater than 100
+________________________________________
+7. Consider the SQL query:
+sql
+Copy code
+SELECT Name FROM Employees ORDER BY Salary DESC;
+What does this query do?
+A) Selects employee names and sorts them alphabetically
+B) Selects employee names and sorts them by highest salary first
+C) Selects employee names and salaries in descending order
+D) Causes an error because Salary is not selected
+________________________________________
+8. Which of the following constraints enforces a relationship between tables?
+A) UNIQUE
+B) CHECK
+C) FOREIGN KEY
+D) NOT NULL
+________________________________________
+9. In SQL, what does the 'BETWEEN' operator do?
+A) Selects values within a given range, exclusive
+B) Selects values within a given range, inclusive
+C) Compares values equal to one of two specified values
+D) Checks if a value is null or not null
+________________________________________
+10. Which of the following is not a valid SQL comment syntax?
+A) -- Single line comment
+B) /* Multi-line comment */
+C) # Single line comment
+D) // Single line comment
+________________________________________
+11. Given the SQL query:
+sql
+Copy code
+SELECT * FROM Orders WHERE OrderDate = '2022-05-01';
+This query will:
+A) Return orders placed on May 1, 2022
+B) Return orders placed after May 1, 2022
+C) Return orders placed before May 1, 2022
+D) Cause an error due to date format
+________________________________________
+12. Which operator is used to combine multiple conditions in a SQL WHERE clause where all conditions must be true?
+A) OR
+B) AND
+C) NOT
+D) XOR
+________________________________________
+13. What is the primary purpose of a function-based index?
+A) To index multiple columns
+B) To index a column based on a function or expression
+C) To enforce uniqueness on a column
+D) To physically sort the data in a table
+________________________________________
+14. Which of the following statements about clustered indexes is true?
+A) A table can have multiple clustered indexes
+B) Clustered indexes are stored separately from the table data
+C) The leaf nodes of a clustered index contain the actual data pages
+D) Clustered indexes can only be created on primary keys
+________________________________________
+15. What does the following SQL statement do?
+sql
+Copy code
+CREATE INDEX idx_name ON Customers (LastName);
+A) Creates a primary key on the LastName column
+B) Creates an index named idx_name on the LastName column
+C) Creates a view named idx_name for the Customers table
+D) Alters the Customers table to add the idx_name column
+________________________________________
+16. Predict the output of the following SQL query:
+sql
+Copy code
+SELECT 10 / 2 + 5 * 2;
+A) 15
+B) 20
+C) 25
+D) 17
+________________________________________
+17. Given the following table 'Numbers':
+Value
+0
+1
+NULL
+2
+NULL
+What is the output of the SQL query?
+sql
+Copy code
+SELECT COUNT(Value) FROM Numbers;
+A) 5
+B) 3
+C) 2
+D) 4
+________________________________________
+18. What will be the result of this SQL query?
+sql
+Copy code
+SELECT COALESCE(NULL, 'A', 'B') AS Result;
+A) NULL
+B) 'A'
+C) 'B'
+D) 'AB'
+________________________________________
+19. Consider the SQL statement:
+sql
+Copy code
+SELECT * FROM Products WHERE Price NOT BETWEEN 50 AND 100;
+This query will select products:
+A) Priced between 50 and 100 inclusive
+B) Priced less than 50 and greater than 100
+C) Priced exactly at 50 or 100
+D) Priced outside the range of 50 to 100 inclusive
+________________________________________
+20. What is the output of the following SQL query?
+sql
+Copy code
+SELECT 'Hello' + ' ' + 'World' AS Greeting;
+A) 'Hello World'
+B) 'HelloWorld'
+C) Causes an error due to invalid syntax
+D) NULL
+________________________________________
+21. Given a table 'Employees' with columns 'Name' and 'Salary', what does this query return?
+sql
+Copy code
+SELECT Name FROM Employees WHERE Salary IN (SELECT MAX(Salary) FROM Employees);
+A) Names of employees with the minimum salary
+B) Names of employees with the average salary
+C) Names of employees with the maximum salary
+D) All employee names
+________________________________________
+22. Predict the result of this SQL query:
+sql
+Copy code
+SELECT CASE WHEN NULL = NULL THEN 'Equal' ELSE 'Not Equal' END AS Result;
+A) 'Equal'
+B) 'Not Equal'
+C) NULL
+D) Causes an error
+________________________________________
+23. What will be the output of the following SQL query?
+sql
+Copy code
+SELECT 15 % 4 AS Remainder;
+A) 3
+B) 4
+C) 15
+D) 0
+________________________________________
+24. Given the table 'Students' with columns 'Name' and 'Age', what does this query do?
+sql
+Copy code
+SELECT Name FROM Students WHERE Age LIKE '2_';
+A) Selects students aged 2
+B) Selects students aged 20 to 29
+C) Selects students aged 21
+D) Selects students with '2' as the first digit of Age
+________________________________________
+25. Predict the output of the following SQL query:
+sql
+Copy code
+SELECT ISNULL(NULL, 'Default') AS Result;
+A) NULL
+B) 'Default'
+C) 'NULL'
+D) Causes an error
+________________________________________
+26. What will be the result of this SQL statement?
+sql
+Copy code
+SELECT * FROM Employees WHERE Department IS NOT NULL AND Salary > 50000;
+A) Employees with Salary over 50000
+B) Employees in any Department with any Salary
+C) Employees in a Department and Salary over 50000
+D) Employees with no Department and Salary over 50000
+________________________________________
+27. Given the table 'Orders' with columns 'OrderID' and 'Quantity', what does this query return?
+sql
+Copy code
+SELECT SUM(Quantity) FROM Orders GROUP BY OrderID HAVING SUM(Quantity) > 100;
+A) Total quantity of all orders over 100
+B) OrderIDs with total quantity over 100
+C) Sum of quantities for orders where the total quantity is over 100
+D) Orders with quantity exactly 100
+________________________________________
+28. Predict the result of the SQL query:
+sql
+Copy code
+SELECT POWER(2, 3) AS Result;
+A) 6
+B) 8
+C) 9
+D) 5
+________________________________________
+29. What will this SQL query return?
+sql
+Copy code
+SELECT * FROM Products WHERE Name LIKE '%a%';
+A) Products with names starting with 'a'
+B) Products with names ending with 'a'
+C) Products with names containing 'a' anywhere
+D) Products with names having 'a' as the second character
+________________________________________
+30. Given the table 'Sales' with columns 'SaleID', 'Amount', and 'Region', what does this query do?
+sql
+Copy code
+SELECT Region, COUNT(*) FROM Sales GROUP BY Region;
+A) Counts the total sales amount per region
+B) Lists regions with the number of sales in each
+C) Lists all sales and regions
+D) Causes an error due to missing aggregate function
+
+Answers
+1.	B) UPDATE
+2.	C) DROP
+3.	B) Zero or more characters
+4.	B) WHERE
+5.	B) REVOKE
+6.	B) Returns the number of products with Price greater than 100
+7.	B) Selects employee names and sorts them by highest salary first
+8.	C) FOREIGN KEY
+9.	B) Selects values within a given range, inclusive
+10.	D) // Single line comment
+11.	A) Return orders placed on May 1, 2022
+12.	B) AND
+13.	B) To index a column based on a function or expression
+14.	C) The leaf nodes of a clustered index contain the actual data pages
+15.	B) Creates an index named idx_name on the LastName column
+16.	D) 17
+17.	B) 3
+18.	B) 'A'
+19.	D) Priced outside the range of 50 to 100 inclusive
+20.	C) Causes an error due to invalid syntax
+21.	C) Names of employees with the maximum salary
+22.	B) 'Not Equal'
+23.	A) 3
+24.	B) Selects students aged 20 to 29
+25.	B) 'Default'
+26.	C) Employees in a Department and Salary over 50000
+27.	C) Sum of quantities for orders where the total quantity is over 100
+28.	B) 8
+29.	C) Products with names containing 'a' anywhere
+30.	B) Lists regions with the number of sales in each
+
+Questions
+________________________________________
+1. Which clause is evaluated first in a SQL query execution order?
+A) WHERE
+B) GROUP BY
+C) HAVING
+D) SELECT
+________________________________________
+2. In SQL, which clause is used to filter records before any grouping is applied?
+A) WHERE
+B) HAVING
+C) GROUP BY
+D) ORDER BY
+________________________________________
+3. Which clause is used in SQL to filter groups after grouping has been performed?
+A) WHERE
+B) HAVING
+C) GROUP BY
+D) SELECT
+________________________________________
+4. Given a table Sales with columns Region, Product, and Amount, what does the following SQL query return?
+sql
+Copy code
+SELECT Region, SUM(Amount) AS TotalSales
+FROM Sales
+GROUP BY Region
+HAVING SUM(Amount) > 10000;
+A) Regions where total sales amount is less than or equal to 10,000
+B) Regions where total sales amount is exactly 10,000
+C) Regions where total sales amount is greater than 10,000
+D) All regions regardless of total sales amount
+________________________________________
+5. Which of the following statements about the WHERE and HAVING clauses is true?
+A) WHERE filters rows before aggregation; HAVING filters groups after aggregation
+B) WHERE filters groups after aggregation; HAVING filters rows before aggregation
+C) Both WHERE and HAVING filter groups after aggregation
+D) Both WHERE and HAVING filter rows before aggregation
+________________________________________
+6. Consider the following SQL query:
+sql
+Copy code
+SELECT Department, COUNT(*) AS NumEmployees
+FROM Employees
+WHERE Salary > 50000
+GROUP BY Department
+HAVING COUNT(*) > 5;
+This query will:
+A) List departments with more than 5 employees, regardless of salary
+B) List departments where more than 5 employees have a salary over 50,000
+C) List all departments with employees earning over 50,000
+D) Cause an error due to incorrect use of HAVING
+________________________________________
+7. Which of the following queries will produce an error?
+A)
+sql
+Copy code
+SELECT Department, COUNT(*)
+FROM Employees
+GROUP BY Department
+HAVING COUNT(*) > 10;
+B)
+sql
+Copy code
+SELECT Department, COUNT(*)
+FROM Employees
+HAVING COUNT(*) > 10;
+C)
+sql
+Copy code
+SELECT Department, COUNT(*)
+FROM Employees
+WHERE Salary > 50000
+GROUP BY Department;
+D)
+sql
+Copy code
+SELECT Department, COUNT(*)
+FROM Employees
+WHERE Department = 'Sales'
+GROUP BY Department;
+________________________________________
+8. What will be the result of the following SQL query?
+sql
+Copy code
+SELECT City, AVG(Salary) AS AverageSalary
+FROM Employees
+GROUP BY City
+HAVING AVG(Salary) < 60000;
+A) List of all cities with their average salary
+B) Cities where the average salary is less than 60,000
+C) Cities where the average salary is more than 60,000
+D) All employees earning less than 60,000
+________________________________________
+9. In which clauses can you use aggregate functions in SQL?
+A) SELECT and WHERE only
+B) WHERE and HAVING only
+C) HAVING and SELECT only
+D) SELECT and HAVING only
+________________________________________
+10. Given the table Orders with columns OrderID, CustomerID, OrderDate, and Amount, what does the following query do?
+sql
+Copy code
+SELECT CustomerID, SUM(Amount) AS TotalAmount
+FROM Orders
+WHERE YEAR(OrderDate) = 2023
+GROUP BY CustomerID
+ORDER BY TotalAmount DESC;
+A) Lists customers and their total order amount in 2023, sorted by highest total amount first
+B) Lists all orders in 2023, sorted by amount
+C) Lists customers who placed orders in 2023, unsorted
+D) Causes an error due to invalid use of ORDER BY
+________________________________________
+11. Which of the following best describes the difference between WHERE and HAVING clauses?
+A) WHERE can use aggregate functions; HAVING cannot
+B) HAVING can use aggregate functions; WHERE cannot
+C) Both WHERE and HAVING can use aggregate functions
+D) Neither WHERE nor HAVING can use aggregate functions
+________________________________________
+12. Predict the output of the following SQL query given the Products table:
+Category	Price	InStock
+Electronics	300	Yes
+Electronics	150	No
+Furniture	700	Yes
+Furniture	800	Yes
+Clothing	50	Yes
+Clothing	40	No
+Query:
+sql
+Copy code
+SELECT Category, COUNT(*) AS TotalItems
+FROM Products
+WHERE InStock = 'Yes'
+GROUP BY Category
+HAVING COUNT(*) > 1;
+What will be the result?
+A) List of all categories with total items in stock
+B) Categories where more than one item is in stock
+C) Categories with only one item in stock
+D) All categories regardless of stock status
+
+Answer
+Answers
+________________________________________
+1.	A) WHERE
+2.	A) WHERE
+3.	B) HAVING
+4.	C) Regions where total sales amount is greater than 10,000
+5.	A) WHERE filters rows before aggregation; HAVING filters groups after aggregation
+6.	B) List departments where more than 5 employees have a salary over 50,000
+7.	B) (Produces an error because HAVING cannot be used without GROUP BY)
+8.	B) Cities where the average salary is less than 60,000
+9.	D) SELECT and HAVING only
+10.	A) Lists customers and their total order amount in 2023, sorted by highest total amount first
+11.	B) HAVING can use aggregate functions; WHERE cannot
+12.	B) Categories where more than one item is in stock
+
+
